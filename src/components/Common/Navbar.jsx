@@ -45,8 +45,8 @@ function Navbar() {
       try {
         const res = await apiConnector("GET", categories.CATEGORIES_API)
         setSubLinks(res.data.data)
-        console.log(res.data.data);
-        console.log(res.data.data.courses[0]);
+        console.log(res.data.data)
+        console.log(res.data.data.courses[0])
       } catch (error) {
         console.log("Could not fetch Categories.", error)
       }
@@ -69,7 +69,13 @@ function Navbar() {
       <div className="flex w-11/12 max-w-maxContent items-center justify-between">
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="Logo" width={160} height={32} loading="lazy" />
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy-mxU29EktZRYLEKFivh_B5WuABrB0qbVDw&usqp=CAU"
+            alt="Logo"
+            width={160}
+            height={25}
+            loading="lazy"
+          />
         </Link>
         {/* Navigation links */}
         <nav className="hidden md:block">
