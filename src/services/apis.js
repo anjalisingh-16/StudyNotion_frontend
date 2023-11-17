@@ -1,4 +1,4 @@
-const BASE_URL = "https://studynotion-backend-i3ez.onrender.com"
+const BASE_URL = "https://studynotion-backend-i3ez.onrender.com/api/v1";
 
 // AUTH ENDPOINTS
 export const endpoints = {
@@ -51,8 +51,7 @@ export const ratingsEndpoints = {
 
 // CATAGORIES API
 export const categories = {
-  CATEGORIES_API:
-    "https://studynotion-backend-i3ez.onrender.com/course/showAllCategories",
+  CATEGORIES_API:  "https://studynotion-backend-i3ez.onrender.com/api/v1/course/showAllCategories",
 }
 
 // CATALOG PAGE DATA
